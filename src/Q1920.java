@@ -17,13 +17,14 @@ public class Q1920 {
 		arr = new int[numCnt];
 		st = new StringTokenizer(br.readLine());
 		for(int i=0; i<numCnt; i++) {
-			arr[i] = Integer.parseInt(br.readLine());
+			arr[i] = Integer.parseInt(st.nextToken());
 		}
 		Arrays.sort(arr);
 		
 		searchCnt = Integer.parseInt(br.readLine());
+		st = new StringTokenizer(br.readLine());
 		for(int i=0; i<searchCnt; i++) {
-			search = Integer.parseInt(br.readLine());
+			search = Integer.parseInt(st.nextToken());
 			if(binarySearch(arr, search)) {
 				System.out.println("1");
 			}else {
@@ -33,6 +34,20 @@ public class Q1920 {
 	}
 	
 	public static boolean binarySearch(int[] arr, int num) {
+		int low = 0;
+		int high = arr.length-1;
+		int mid = 0;
+		
+		while(low<=high) {
+			mid = (low+high)/2;
+			if(arr[mid]==num) {
+				return true;
+			}else if(arr[mid]>num) {
+				high = mid-1;
+			}else {
+				low = mid+1;
+			}
+		}
 		return false;
 	}
 }
