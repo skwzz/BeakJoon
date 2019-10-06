@@ -1,9 +1,6 @@
 package vip;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class PowerSet {
 	private static int[] data = {0, 1, 2, 3};
