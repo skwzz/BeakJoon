@@ -1,6 +1,6 @@
 package leetcode;
 
-public class leet461_HammingDistance {
+public class Leet461_HammingDistance {
 	public static void main(String[] args) {
 		int a = 1;
 		int b = 4;

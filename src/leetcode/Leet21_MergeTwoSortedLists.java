@@ -1,6 +1,6 @@
 package leetcode;
 
-public class leet21_MergeTwoSortedLists {
+public class Leet21_MergeTwoSortedLists {
 	public static void main(String[] args) {
 		
 	}

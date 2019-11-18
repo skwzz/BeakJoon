@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Stack;
 
-public class leet20_ValidParentheses {
+public class Leet20_ValidParentheses {
 	public static void main(String[] args) {
 		String str = "()";
 //		String str = "()[]{}";
